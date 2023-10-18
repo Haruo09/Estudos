@@ -1,0 +1,29 @@
+# URL de conexão com o banco de dados (neste exemplo, MySQL).
+spring.datasource.url=jdbc:mysql://localhost:3306/produtos?useTimezone=true&serverTimezone=America/Sao_Paulo
+
+# Nome de usuário para autenticação no banco de dados.
+spring.datasource.username=root
+
+# Senha do usuário para autenticação no banco de dados. Deixe em branco para ambiente local (não recomendado em produção).
+spring.datasource.password=
+
+# Classe do driver JDBC para o banco de dados.
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+
+# Testar a conexão enquanto estiver inativa.
+spring.datasource.testWhileIdle=true
+
+# Consulta usada para validar a conexão com o banco de dados.
+spring.datasource.validationQuery=SELECT 1
+
+# Exibir instruções SQL no log (útil para depuração).
+spring.jpa.show-sql=true
+
+# Estratégia para atualização do esquema do banco de dados (usar "update" para atualizar automaticamente).
+spring.jpa.hibernate.ddl-auto=update
+
+# Estratégia de nomenclatura usada pelo Hibernate.
+spring.jpa.hibernate.naming-strategy=org.hibernate.cfg.ImprovedNamingStrategy
+
+# Dialeto do banco de dados para gerar consultas SQL otimizadas.
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
