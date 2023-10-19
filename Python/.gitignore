@@ -1,0 +1,4 @@
+# Minhas configurações:
+.pytest_cache
+.venv
+.coverage
